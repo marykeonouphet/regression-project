@@ -14,10 +14,10 @@ dim(proj2.data)
 
 ## Odd observations
 ```{r odds}
-proj2.data[c(which(proj2.data$sewer=="none")),]
-proj2.data[c(which(proj2.data$bathrooms<1)),]
-proj2.data[c(which(proj2.data$lotSize==0)),]
-proj2.data[c(which(proj2.data$landValue > proj2.data$price)),]
+proj2.data[which(proj2.data$sewer=="none"),]
+proj2.data[which(proj2.data$bathrooms<1),]
+proj2.data[which(proj2.data$lotSize==0),]
+proj2.data[which(proj2.data$landValue > proj2.data$price),]
 ```
 ### obs 851 and 891 data looks exactly the same except they have different number of rooms
 ### obs 851, 891, and 1011 have landvalue > price
